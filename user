@@ -1,0 +1,8 @@
+user='kallu'
+pwd=1307
+userusername=input ("enter your username")
+password=int(input("enter the password"))
+if (username==user and password==pwd):
+  print("login sucessfull")
+else:
+  print("login falied")
