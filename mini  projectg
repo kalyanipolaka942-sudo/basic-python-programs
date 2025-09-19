@@ -1,0 +1,128 @@
+print("welcome to Food delivery system")
+menu=int(input("enter 1=tiffins,2=meals,3=juice,4=snacks,5=show all the menu,6=show my ordder,7=exit"))
+if(menu==1):
+  tiffins=int(input("tiffins list: 1=Dosa,2=Idli,3=upma,4=garre,5=uthappam"))
+  if(tiffins==1):
+    dosa=int(input("enter no.of dosa:"))
+    priced=30
+    print("price of dosa=30")
+    print("total price of dosa= ",dosa*priced)
+    print("Thankyou")
+  elif(tiffins==2):
+    idli=int(input("enter no.of plates:"))
+    pricei=20
+    print("price of Idli=20")
+    print("total price of idli=",idli*pricei)
+    print("Thankyou")
+  elif(tiffins==3):
+    upma=int(input("enter no.of plates:"))
+    priceu=40
+    print("price of upma=20")
+    print("total price of upma=",upma*priceu)
+    print("Thankyou")
+  elif(tiffins==4):
+    garre=int(input("enter no.of plates:"))
+    priceg=30
+    print("price of garre=30")
+    print("total price of garre=",garre*priceg)
+    print("Thankyou")
+  elif(tiffins==5):
+    uthappam=int(input("enter no.of plates:"))
+    priceu=30
+    print("price of uthappam=30")
+    print("total price of uthappam=",uthappam*priceu)
+    print("Thankyou")
+  else:
+    print("show all the menu")
+elif(menu==2):
+  meals=int(input("meals:1=half meals,2=full meals"))
+  if(meals==1):
+    print("price of half meals=10")
+  elif(meals==2):
+    print("price of full meals=200")
+  else:
+    print("show all the menu")
+elif(menu==3):
+  juice=int(input("juice items:1=mango juice,2=apple juice,3=carrot juice,4=orange juice"))
+  if(juice==1):
+    print("price of mango juice=30")
+    print("Thankyou")
+  elif(juice==2):
+    print("price of apple juice=30")
+    print("Thankyou")
+  elif(juice==3):
+    print("price of carrot juice=30")
+    print("Thankyou")
+  elif(juice==4):
+    print("price of orange juice=30")
+    print("Thankyou")
+  else:
+    print("show all the menu")
+elif(menu==4):
+  snacks=int(input("snacks:1=cold drinks,2=hot drinks,3=samosa,4=puffs,5=cake"))
+  if(snacks==1):
+   cold_drinks=int(input("cold drinks:1=sprite,2=thumbsup,3=coke,4=dietcoke"))
+   if(cold_drinks==1):
+    print("price of sprite=20")
+    print("Thankyou")
+   elif(cold_drinks==2):
+    print("price of thumbsup=20")
+    print("Thankyou")
+   elif(cold_drinks==3):
+    print("price of coke=20")
+    print("Thankyou")
+   elif(cold_drinks==4):
+    print("price of dietcoke=40")
+    print("Thankyou")
+   else:
+    print("show all the menu")   
+  elif(snacks==2):
+    hot_drinks=int(input("hot drinks:1=coffee,2=tea"))
+    if(hot_drinks==1):
+      print("price of coffee=20")
+      print("Thankyou")
+    elif(hot_drinks==2):
+      print("price of tea=20")
+      print("Thankyou")
+  elif(snacks==3):
+    samosa=int(input("enter no.of plates:"))
+    prices=20
+    print("price of samosa=20")
+    print("total price of samosa=",samosa*prices)
+    print("Thankyou")
+  elif(snacks==4):
+    puffs=int(input("enter no.of plates:"))
+    pricep=30
+    print("price of puffs=30")
+    print("total price of puffs=",puffs*pricep)
+    print("Thankyou")
+  elif(snacks==5):
+    cake=int(input("enter no.of plates:"))
+    pricec=50
+    print("price of cake=50")
+    print("total price of cake=",cake*pricec)
+    print("Thankyou")
+  else:
+      print("invalid")
+elif(menu==5):
+    show_all_the_menu=int(input("menu is 1=tiffins,2=meals,3=juice,4=snacks"))
+    if(show_all_the_menu==1):
+      print("tiffins list: 1=Dosa,2=Idli,3=upma,4=garre,5=uthappam")
+      print("Thankyou")
+    elif(show_all_the_menu==2):
+      print("meals:1=half meals,2=full meals")
+      print("Thankyou")
+    elif(show_all_the_menu==3):
+        print("juice items:1=mango juice,2=apple juice,3=carrot juice,4=orange juice")
+        print("Thankyou")
+    elif(show_all_the_menu==4):
+        print("snacks:1=cold drinks,2=hot drinks,3=samosa,4=puffs,5=cake")
+        print("Thankyou")
+    else:
+        print("invalid")
+elif(menu==6):
+    print("show my order")
+elif(menu==7):
+    print("exit")
+else:
+    print("invalid")
